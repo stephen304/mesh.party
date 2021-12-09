@@ -1,0 +1,8 @@
+- hosts: ingress
+  roles:
+    - ansible-role-security
+    - yggdrasil
+    - ansible-haproxy
+  vars:
+    haproxy_use_ppa: false
+    security_ssh_permit_root_login: "yes"

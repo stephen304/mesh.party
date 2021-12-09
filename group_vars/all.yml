@@ -1,0 +1,44 @@
+---
+yggdrasil_extra_peers:
+  - listen_uri: "tcp://50.236.201.218:56088"
+  - listen_uri: "tcp://[2607:f1c0:1801:d4::1]:61216"
+  - listen_uri: "tcp://lancis.iscute.moe:49273"
+  - listen_uri: "tls://lancis.iscute.moe:49274"
+  - listen_uri: "tcp://longseason.1200bps.xyz:13121"
+  - listen_uri: "tls://longseason.1200bps.xyz:13122"
+  - listen_uri: "tcp://213.188.210.9:10010"
+  - listen_uri: "tls://213.188.210.9:10020"
+  - listen_uri: "tcp://213.188.199.150:10010"
+  - listen_uri: "tls://213.188.199.150:10020"
+  # BRA
+  - listen_uri: "tcp://45.231.133.188:58301"
+  # Canada
+  - listen_uri: "tcp://195.123.245.146:7743"
+  - listen_uri: "tcp://37.205.14.171:46370"
+  - listen_uri: "tls://217.195.164.4:10531"
+  # Finland
+  - listen_uri: "tls://65.21.57.122:61995"
+  - listen_uri: "tls://fi1.servers.devices.cwinfo.net:61995"
+  - listen_uri: "tls://[2a01:4f9:c010:664d::1]:61995"
+  # Netherlands
+  - listen_uri: "tcp://ygg-nl.incognet.io:8883"
+  - listen_uri: "tls://ygg-nl.incognet.io:8884"
+  - listen_uri: "tls://[2a00:7b80:3013:bc5::]:62486"
+  # France
+  - listen_uri: "tcp://s2.i2pd.xyz:39565"
+  - listen_uri: "tls://s2.i2pd.xyz:39575"
+  - listen_uri: "tcp://62.210.85.80:39565"
+  - listen_uri: "tls://62.210.85.80:39575"
+  - listen_uri: "tcp://[2001:470:1f13:e56::64]:39565"
+  - listen_uri: "tls://[2001:470:1f13:e56::64]:39575"
+  # Dead
+  - listen_uri: "tcp://108.175.10.127:61216"
+  - listen_uri: "tcp://45.77.107.150:34660"
+  - listen_uri: "tcp://45.76.166.128:12345"
+  - listen_uri: "tcp://64.112.176.176:1617"
+  - listen_uri: "tls://67.205.187.55:19102"
+  - listen_uri: "tcp://67.205.187.55:19103"
+  - listen_uri: "tcp://104.248.15.125:31337"
+  - listen_uri: "tcp://198.58.100.240:44478"
+  - listen_uri: "tcp://gateway1.clearnet.massmesh.net:1617"
+

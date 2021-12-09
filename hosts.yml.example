@@ -1,0 +1,12 @@
+---
+all:
+  children:
+    ingress:
+      hosts:
+        1.2.3.4:
+          yggdrasil_encryption_public_key:
+          yggdrasil_encryption_private_key:
+      vars:
+        yggdrasil_node_name: "ingress.mesh.party"
+  vars:
+    ansible_user: root
