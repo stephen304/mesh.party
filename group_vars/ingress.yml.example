@@ -1,0 +1,39 @@
+---
+haproxy_frontend:
+  - name: ingress_http
+    mode: http
+    bind: [ listen: ":::80 v4v6" ]
+    default_backend: backend_http
+  - name: ingress_https
+    mode: tcp
+    bind: [ listen: ":::443 v4v6" ]
+    default_backend: backend_https
+haproxy_backend:
+  - name: backend_http
+    mode: http
+    balance: roundrobin
+    server:
+      - name: backend_1
+        listen: backend1:80
+        param:
+          - check
+          - 'weight 2'
+      - name: backend_2
+        listen: backend2:80
+        param:
+          - check
+          - 'weight 1'
+  - name: backend_https
+    mode: tcp
+    balance: roundrobin
+    server:
+      - name: backend_1
+        listen: backend1:443
+        param:
+          - check
+          - 'weight 2'
+      - name: backend_2
+        listen: backend2:443
+        param:
+          - check
+          - 'weight 1'
