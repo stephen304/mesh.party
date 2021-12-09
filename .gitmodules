@@ -1,0 +1,9 @@
+[submodule "roles/ansible-haproxy"]
+	path = roles/ansible-haproxy
+	url = git@github.com:Oefenweb/ansible-haproxy.git
+[submodule "roles/ansible-role-security"]
+	path = roles/ansible-role-security
+	url = git@github.com:geerlingguy/ansible-role-security.git
+[submodule "roles/yggdrasil"]
+	path = roles/yggdrasil
+	url = git@gitlab.com:stephen304/yggdrasil.git
