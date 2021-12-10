@@ -6,6 +6,11 @@ all:
         1.2.3.4:
           yggdrasil_encryption_public_key:
           yggdrasil_encryption_private_key:
+    localproxy:
+      hosts:
+        192.168.1.x:
+          yggdrasil_encryption_public_key:
+          yggdrasil_encryption_private_key:
   vars:
     ansible_user: root
     yggdrasil_node_name: "mesh.party"

@@ -6,3 +6,8 @@
   vars:
     haproxy_use_ppa: false
     security_ssh_permit_root_login: "yes"
+- hosts: localproxy
+  roles:
+    - yggdrasil
+  vars:
+    security_ssh_permit_root_login: "yes"
