@@ -22,6 +22,20 @@ This playbook assists with managing a reverse proxy setup for hosting services f
 
 From the perspective of a user, they receive DNS records with A and AAAA records to all the ingress nodes which will relay to the backend. If the clearnet WAN is down, the user will be able to connect to the backup mesh provided that an alternate connection is meshed with the local proxy. Users with Yggdrasil access will use the mesh and not require a clearnet connection provided that a path through the Yggdrasil mesh is available.
 
+## Usage
+
+* Create an ingress node in a cloud provider
+* Create a local reverse proxy with ports forewarded to it
+* Add both to the hosts inventory
+* Define WAN IPs of the local network in `group_vars/ingress.yml`
+* Run the playbook
+* Add the yggdrasil IP of the local proxy as a backup server in `group_vars/ingress.yml`
+* Run the playbook again
+* Add the ipv4/6 adresses of the cloud ingress nodes as A/AAAA records for any domain you want to use
+* Add the Yggdrasil IP of the local proxy as an AAAA record to allow mesh users to access the local proxy using mesh routing
+* Confirm that visiting the configured domains returns either a cloud node IP or the local proxy mesh IP
+* Configure certbot on the local proxy for SSL termination
+
 ## Status
 
 - [x] Ingress Nodes
