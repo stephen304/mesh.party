@@ -20,7 +20,7 @@ This playbook assists with managing a reverse proxy setup for hosting services f
   * Yggdrasil serves the backup connection as well as provides access to services to users with a mesh connection
   * A firewall blocks connections to the clearnet WANs unless the source IP is from an ingress node (using auto updating aliases via DNS)
 
-From the perspective of a user, they receive DNS records with A and AAAA records to all the ingress nodes which will relay to the backend. If the clearnet WAN is down, the user will be able to connect to the backup mesh provided that an alternate connection is meshed with the local proxy. Users with Yggdrasil access will use the mesh and not require a clearnet connection provided that a path through the Yggdrasil mesh is available.
+From the perspective of a user, they receive DNS records with A and AAAA records to all the ingress nodes which will relay to the backend. If the clearnet WAN is down, the cloud ingress node will be able to route the request to the local proxy via the Yggdrasil mesh provided that an alternate internet connection provides a path across the mesh to the local proxy. Users with Yggdrasil access will use the mesh and not require a clearnet connection provided that a path through the Yggdrasil mesh is available, bypassing the cloud ingress nodes.
 
 ## Usage
 
